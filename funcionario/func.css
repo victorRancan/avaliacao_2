@@ -1,0 +1,9 @@
+body{
+    background-color: grey;
+}
+
+.conatiner{
+    text-align: center;
+    border: 20px;
+    align-items: center;
+}

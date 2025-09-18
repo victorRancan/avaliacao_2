@@ -1,0 +1,22 @@
+<html>
+    <link rel="stylesheet" href="ADM.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+    <div class="conteiner">
+        <h1>Area de dministraçãoa</h1>
+        <div>
+        <input type="text" id="NomeCadastro" placeholder="Seu nome">
+        <input type="text" id="passwordCadastro" placeholder="Sua senha">
+
+        <button class="button" onclick="cadastro()">cadastrar</button> 
+
+        <button class="button" onclick="cadastroADM()">cadastrar como adminstrador</button> 
+        </div>
+        <button class="buttom" onclick="surprise()">memes</button>
+    </div>
+
+    <script src="../firebase.js"></script>
+    <script src="adm.js"></script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <link rel="stylesheet" href="LOGIN.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+    
+    <div class="devbox">
+    <button id="dev" onclick="loginADM()">ADM</button>
+    </div>
+
+    <h1 class="LOGIN_message">Pagina de login inicial</h1>
+
+    <div class="conteiner">
+        <div class="input">
+            <input type="text" id="Nome" placeholder="Seu nome">
+            <input type="text" id="password" placeholder="Sua senha">
+        </div>
+    
+    <button class="button" onclick="login()">Entrar</button> 
+
+        </div>
+  
+    <script src="../firebase.js"></script>
+    <script src="login.js"></script>
+</html>

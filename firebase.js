@@ -4,12 +4,13 @@
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDOedF0mRvhl3Fr9QGuPzxJh9Ddtyemk1U",
-  authDomain: "test-53697.firebaseapp.com",
-  projectId: "test-53697",
-  storageBucket: "test-53697.firebasestorage.app",
-  messagingSenderId: "668986041524",
-  appId: "1:668986041524:web:6481ef182984fcc340e3e1"
+  apiKey: "AIzaSyDuOb4mcpzvpEO4S-suCONKWjtzTinKggU",
+  authDomain: "projeto-segundo-12788.firebaseapp.com",
+  databaseURL: "https://projeto-segundo-12788-default-rtdb.firebaseio.com",
+  projectId: "projeto-segundo-12788",
+  storageBucket: "projeto-segundo-12788.firebasestorage.app",
+  messagingSenderId: "918588188100",
+  appId: "1:918588188100:web:3944678810eee6b6c5f091"
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();

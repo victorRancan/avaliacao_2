@@ -82,20 +82,20 @@ function surprise(){
   alert(nome) 
 }
 
-function consultarTempoFuncionario(){
+function consultarTempoFuncionario() {
   const lista = document.getElementById("lista");
   lista.innerHTML = ""; 
 
-    db.ref('funcionarios').once('value', (snapshot) => {
+  db.ref('funcionarios').once('value', (snapshot) => {
     snapshot.forEach((childSnapshot) => {
+      const a = childSnapshot.key;
       const data = childSnapshot.val();
       const div = document.createElement('div');
       div.className = 'registro';
-      div.innerHTML = `<strong>${data.nome}</strong> horário <em>${data.tempo}</em>`;
+      div.innerHTML = `<strong>${a}</strong> horário <em>${data.tempo}</em>`;
       lista.appendChild(div);
     });
   });
-
 }
 
 window.onload = consultarTempoFuncionario;

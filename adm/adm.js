@@ -81,3 +81,21 @@ function surprise(){
   const nome= localStorage.getItem("nome");
   alert(nome) 
 }
+
+function consultarTempoFuncionario(){
+  const lista = document.getElementById("lista");
+  lista.innerHTML = ""; 
+
+    db.ref('funcionarios').once('value', (snapshot) => {
+    snapshot.forEach((childSnapshot) => {
+      const data = childSnapshot.val();
+      const div = document.createElement('div');
+      div.className = 'registro';
+      div.innerHTML = `<strong>${data.nome}</strong> horário <em>${data.tempo}</em>`;
+      lista.appendChild(div);
+    });
+  });
+
+}
+
+window.onload = consultarTempoFuncionario;

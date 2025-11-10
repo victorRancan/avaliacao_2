@@ -73,7 +73,7 @@ function clockout(){
   const b = localStorage.getItem("inicio");
   const tempo = calcularDiferencaDeTempo(a, b);
   const dados = { tempo };
-  alert("Redistrado "+tempo+" de trabalho")
+  alert("Registrado "+tempo+" de trabalho")
   changetime(dados);
 }
 
